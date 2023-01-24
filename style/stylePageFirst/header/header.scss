@@ -1,0 +1,137 @@
+
+
+
+
+.header {
+    padding-top: 100px;
+}
+
+
+.header__wrapper {
+
+    background: #C5EC00;
+    border-radius: 20px;
+    max-height: 1800px;
+
+
+    @media (max-width:1360px) {
+        border-radius: 0px;
+    }
+
+
+    .span__italc {
+
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    .slider__img {
+        img {
+            max-width: 375px;
+            width: 100%;
+            max-height: 500px;
+
+            @media (max-width:1130px) {
+                margin: 0 auto;
+                margin-bottom: 30px;
+            }
+        }
+
+    }
+
+    .header__slider {
+        padding: 90px 15px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        max-width: 1360px;
+        width: 100%;
+        max-height: 1500px;
+
+        @media (max-width:1130px) {
+            flex-direction: column-reverse;
+        }
+
+        .slider__text {
+
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            max-width: 707px;
+            max-height: 417px;
+            width: 100%;
+
+            h1 {
+                font-weight: 500;
+                font-size: 55px;
+                line-height: 105.9%;
+                color: #0C0C0C;
+
+                @media (max-width:620px) {
+                    font-size: 44px;
+                }
+            }
+
+
+            button {
+                width: 366px;
+                height: 71px;
+
+                @media (max-width:400px) {
+                    max-width: 279px;
+                    margin: 0 auto;
+                }
+
+            }
+
+            .slider__button {
+                max-width: 532px;
+
+                @media (max-width:1130px) {
+                    padding-top: 30px;
+                    margin: 0 auto;
+                    margin-bottom: 30px;
+                }
+            }
+
+            .slider__info {
+                max-width: 532px;
+                width: 100%;
+
+                @media (max-width:1130px) {
+                    width: 100%;
+                    margin: 0 auto;
+                    margin-bottom: 30px;
+                }
+
+                p {
+
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #0C0C0C;
+
+                    .span__noitalc {
+                        font-weight: bold;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .header__slider--down {
+        margin-top: 90px;
+        padding: 90px 15px;
+        margin: 0 auto;
+        max-width: 1240px;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 36px;
+        color: #0C0C0C;
+        border-top: 2px solid #0C0C0C;
+
+    }
+}
