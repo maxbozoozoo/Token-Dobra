@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./assets/imgPageFirst/icons/avatar_1.png">
+    <link rel="icon" href="./assets/imgPageFirst/icons/avatar_1.png" />
     <link rel="stylesheet" href="./style/styleReset.css" />
     <link rel="stylesheet" href="./style/stylePageFirst/stylePageFirst.css" />
-    <title>Document</title>
+    <title>Token Dobra</title>
   </head>
   <body>
     <nav class="nav">
@@ -21,10 +21,63 @@
             <a href="#questions">Что такое pre-NFT</a>
             <a href="#questions">FAQ</a>
             <div class="btn">
-              <button>Расскажите о нас</button>
+              <a
+                class="nav-button"
+                href="#"
+                easy-toggle="#modalwin"
+                easy-class="show"
+                easy-rcoe
+                >Расскажите о нас</a
+              >
             </div>
           </div>
         </div>
+      </div>
+
+      <div id="modalwin" class="modal">
+        <div class="modal__window">
+          <div class="window__close">
+            <a
+              class="btn-close"
+              href="#"
+              easy-remove="#modalwin"
+              easy-class="show"
+              easy-rcoe
+              >X</a
+            >
+          </div>
+          <div class="window__img">
+            <img
+              src="./assets/imgPageFirst/background/img-window.png"
+              alt="window__img"
+            />
+          </div>
+
+          <div class="window__info">
+            <h3>Пожалуйста, расскажите о нас</h3>
+            <span
+              >Популяризация благотворительности – одна из главных задач нашего
+              проекта. Мы будем крайне признательны, если вы поддержите эту идею
+              и расскажете о галерее в своих социальных сетях.</span
+            >
+
+            <div class="window__input">
+              <input
+                type="text"
+                value="https://tokendobra.ru/main"
+                id="input"
+              />
+              <button class="copy">Копировать</button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="overlay"
+          easy-toggle="#modalwin"
+          easy-class="show"
+          easy-rcoe
+        ></div>
       </div>
     </nav>
 
@@ -456,5 +509,38 @@
         </div>
       </div>
     </main>
+
+    <footer class="footer">
+      <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__logo">
+          <img src="./assets/imgPageFirst/icons/logo.svg" alt="logo" />
+        </div>
+        <div class="footer__rules">
+          <a href="#">Правила сайта</a>
+          <a href="#">Оферта</a>
+          <a href="#">Конфиденциальность</a>
+        </div>
+        <div class="footer__info">
+          <div class="child">
+            <span>Информация</span>
+          </div>
+          <a href="#">FAQ</a>
+          <a href="#">Миссия</a>
+          <a href="#">Что такое pre-NFT</a>
+
+        </div>
+        <div class="footer__links">
+          <div class="child">
+          <span>Связь</span>
+        </div>
+          <a href="#">@Telegram: TokenDobra</a>
+          <a href="#">help@tokendobra.ru</a>
+        </div>
+      </div>
+    </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/easy-toggler@2.2.7"></script>
   </body>
 </html>

@@ -5,9 +5,10 @@
 // контейнер
 // общие кнопки и елементы
 
+//навигация
 .nav__info {
     position: fixed;
-   
+
     margin-top: 18px;
     display: flex;
     justify-content: space-between;
@@ -19,11 +20,11 @@
 }
 
 .nav__menu {
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 638px;
+    height: 55px;
 
     a {
         text-decoration: none;
@@ -36,7 +37,9 @@
     .btn {
 
 
-        button {
+        .nav-button {
+            padding: 14px 30px;
+            gap: 10px;
             width: 234px;
             height: 55px;
             background: none;
@@ -56,6 +59,8 @@
 }
 
 
+
+//общая кнопка 
 .btn {
 
     button {
@@ -76,6 +81,8 @@
 
 }
 
+
+//желтый контейнер
 
 .buy__wrapper {
     display: flex;
@@ -133,7 +140,7 @@
         }
 
         p {
-           margin-top: 20px;
+            margin-top: 20px;
             font-weight: 500;
             font-size: 20px;
             line-height: 30px;
@@ -143,4 +150,222 @@
             flex-grow: 0;
         }
     }
+}
+
+
+
+//модальное окно
+
+.modal.show {
+    visibility: visible;
+    z-index: 100;
+    opacity: 1;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.9s;
+
+
+
+
+    h3 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    span {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #333333;
+    }
+
+    input {
+        width: 355px;
+        height: 59px;
+        padding-left: 16px;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 11px;
+    }
+
+    .copy {
+        width: 213px;
+        height: 59px;
+        border: 2px solid #0C0C0C;
+        border-radius: 11px;
+        background-color: #ffffff00;
+    }
+
+    .btn-close {
+        text-decoration: none;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        right: 10px;
+        top: 10px;
+        border: none;
+        background-color: #ffffff00;
+        color: #0C0C0C;
+
+    }
+
+
+
+    .modal__window {
+        position: relative;
+        z-index: 2;
+        width: 904px;
+        height: 504px;
+        background: #FFFFFF;
+        border-radius: 15px;
+        display: flex;
+
+        .window__img {
+            padding: 10px;
+            width: 238px;
+            height: 484px;
+        }
+
+        .window__info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 30px;
+
+            position: absolute;
+            width: 576px;
+            height: 245px;
+            left: 288px;
+            top: 130px;
+        }
+
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #0C0C0C;
+        opacity: 0.7;
+        z-index: -2;
+    }
+
+}
+
+
+//футер
+
+.footer{
+    position: relative;
+
+    background: #F4F4F4;
+}
+
+.footer__wrapper {
+    display: grid;
+    padding-bottom: 40px;
+    grid-template-columns: 1.6fr 0.7fr 0.7fr;
+    grid-template-rows: 0.8fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "logo logo logo"
+        "rules info links";
+
+    a {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 27px;
+        color: #0C0C0C;
+    }
+
+    span {
+        width: 115px;
+        height: 24px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+       
+        color: rgba(0, 0, 0, 0.3);
+    }
+
+   
+
+}
+
+
+.footer__logo {
+    grid-area: logo;
+    display: grid;
+
+    align-content: center;
+
+}
+
+.footer__rules {
+
+    display: grid;
+    height: 200px;
+    align-self:end;
+    align-content:end;
+
+    
+
+
+    a {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 27px;
+        color: rgba(0, 0, 0, 0.3);
+    }
+}
+
+.footer__info {
+    grid-area: info;
+    display: grid;
+    align-self:end;
+    align-content:end;
+
+    .child{
+        height: 90px;
+         align-self: start;
+     }
+
+}
+
+.footer__links {
+    grid-area: links;
+    display: grid;
+    align-self:center;
+    align-content:end;
+
+    .child{
+       height: 85px;
+        align-self: start;
+    }
+}
+
+
+.footer__wrapper {
+    height: 100%;
+    margin: 0;
 }

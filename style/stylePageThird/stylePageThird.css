@@ -30,9 +30,11 @@ body {
   line-height: 24px;
   color: rgba(0, 0, 0, 0.5);
 }
-.nav__menu .btn button {
+.nav__menu .btn {
   width: 234px;
   height: 55px;
+}
+.nav__menu .btn .nav-button {
   background: none;
   border: 2px solid #0C0C0C;
   border-radius: 11px;
@@ -57,6 +59,156 @@ body {
 .btn button a {
   text-decoration: none;
   color: #FFFFFF;
+}
+
+.buy__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 94px 20px;
+  gap: 10px;
+  width: 1360px;
+  height: 568px;
+  background: #FFE500;
+  border-radius: 20px;
+  flex: none;
+  order: 4;
+  flex-grow: 0;
+}
+.buy__wrapper .buy__box-info {
+  width: 1254px;
+  height: 380px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 85px;
+  width: 1254px;
+  height: 380px;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.buy__wrapper .buy__box-info img {
+  width: 380px;
+  height: 380px;
+}
+.buy__wrapper .buy__box-info .buy__text {
+  width: 789px;
+  height: 242px;
+}
+.buy__wrapper .buy__box-info h2 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 105.9%;
+  color: #0C0C0C;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.buy__wrapper .buy__box-info p {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #0C0C0C;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.modal.show {
+  visibility: visible;
+  z-index: 100;
+  opacity: 1;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  z-index: -1;
+  opacity: 0;
+}
+.modal h3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+.modal span {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #333333;
+}
+.modal input {
+  width: 355px;
+  height: 59px;
+  padding-left: 16px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 11px;
+}
+.modal .copy {
+  width: 213px;
+  height: 59px;
+  border: 2px solid #0C0C0C;
+  border-radius: 11px;
+  background-color: rgba(255, 255, 255, 0);
+}
+.modal .btn-close {
+  text-decoration: none;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 10px;
+  top: 10px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  color: #0C0C0C;
+}
+.modal .modal__window {
+  position: relative;
+  z-index: 2;
+  width: 904px;
+  height: 504px;
+  background: #FFFFFF;
+  border-radius: 15px;
+  display: flex;
+}
+.modal .modal__window .window__img {
+  padding: 10px;
+  width: 238px;
+  height: 484px;
+}
+.modal .modal__window .window__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
+  position: absolute;
+  width: 576px;
+  height: 245px;
+  left: 288px;
+  top: 130px;
+}
+.modal .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0C0C0C;
+  opacity: 0.7;
+  z-index: -2;
 }
 
 body {
